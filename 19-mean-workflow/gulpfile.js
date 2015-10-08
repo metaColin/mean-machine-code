@@ -61,7 +61,6 @@ gulp.task('nodemon', function() {
     ext: 'js less html'
   })
     .on('start', ['watch'])
-    .on('change', ['watch'])
     .on('restart', function() {
       console.log('Restarted!');
     });
